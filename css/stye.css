@@ -6,9 +6,12 @@
 
 /* -------------------------------------------------------------- Header Section--------------------------------------------------------------- */
 header { 
-    background-image: url("/image/my-pic.png");
+    background-image: url("../image/my-pic.png");
     background-repeat: no-repeat, repeat;
-    background-color: #cccccc;
+    padding-bottom: 300px;
+    background-position: center;
+    background-size: 80%;
+    background-position-y: 20%;
 }
 
 .header__portfolio {
@@ -41,12 +44,17 @@ header {
     color: yellowgreen;
 }
 
+.header__text {
+   padding-top: 150px;
+}
+
 .header__text h1 {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
     font-size: 60px;
+    
 }
 
 .header__text h2 {
