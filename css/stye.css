@@ -26,9 +26,7 @@ header {
     display: flex;
     float: right;
     list-style: none;
-    margin: 20px;
-    
-    
+    margin: 20px;   
 }
 
 .header__mainMenu li {
@@ -97,22 +95,6 @@ header {
 /* -------------------------------------------------------------- About Me Section End--------------------------------------------------------------- */
 
 /* -------------------------------------------------------------- My Portfolio Start --------------------------------------------------------------- */
-.my__portfolio div{
-padding: 40px;
-}
-
-.my__portfolio h1 {
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 60px;
-}
-
-.my__portfolioLists {
-    display: flex;
-    justify-content: center;
-   
-}
-
 
 
 /* -------------------------------------------------------------- My Portfolio End --------------------------------------------------------------- */
@@ -239,8 +221,8 @@ form textarea {
     border: 6px;
     color: #fff;
     font-size: 18px;
-    padding: 15px;
-    margin: 15px 0;
+    padding: 5px;
+    margin: 5px 0;
 }
 
 form input:hover,
