@@ -262,3 +262,65 @@ form textarea:hover {
 /* ----------------------------------------------- Footer End -------------------------------------------------------- */
 
 
+/***********MEDIA QUERY HEADER SECTION*****/
+@media only screen and (max-width: 600px) {
+    .header {
+
+        background-image: none;
+        /* background-color: #242323; */
+        background-color: #3E3C3C;
+    }
+
+
+    .header__image--sm {
+        display: block;
+    }
+
+    .header__image--sm img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+
+
+    }
+
+    .header__heading--desktop {
+        display: none;
+    }
+
+    .header__heading--mobile {
+        display: block;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        /* background-color: green; */
+        width: 300px;
+        text-align: center;
+    }
+
+        .header__heading--h1 {
+            font-size: 35px;
+        }
+    
+        .header__heading--h2 {
+            font-size: 20px;
+        }
+    
+        .header__heading--span1 {
+            color: #20E700;
+            /* background-color: blue; */
+    
+        }
+    
+        .header__heading--span2 {
+            display: block;
+            /* background-color: yellow; */
+        }
+}
