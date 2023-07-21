@@ -259,4 +259,14 @@ form textarea:hover {
 
 /* ----------------------------------------------- Footer End -------------------------------------------------------- */
 
+/* ----------------------------------------------- Media Queries -------------------------------------------------------- */
 
+/***********MEDIA QUERY HEADER SECTION*****/
+@media only screen and (max-width: 600px) {
+    .header {
+
+        background-image: none;
+        /* background-color: #242323; */
+        background-color: #3E3C3C;
+    }
+}
