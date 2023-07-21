@@ -324,3 +324,119 @@ form textarea:hover {
             /* background-color: yellow; */
         }
 }
+
+/***********MEDIA QUERY ABOUT SECTION*****/
+@media only screen and (max-width: 600px) {
+    .about {
+        height: 150vh;
+        padding-top: 10%;
+
+    }
+
+    .about__img {
+        display: block;
+        text-align: center;
+        padding: 10% 3% 0% 0;
+    }
+
+    .about__img img {
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+    }
+
+    .about__img img:hover {
+        transform: translate(-5px, -10px);
+        cursor: pointer;
+        box-shadow: 13px 10px 5px 0px rgba(133, 121, 121, 0.75);
+    }
+
+    .about__heading--h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .about__heading {
+        width: 80%;
+    }
+
+    .about__heading--paragraph {
+        text-align: left;
+    }
+
+    .about__content {
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 10%;
+        width: 87%;
+
+
+    }
+
+}
+
+
+/***********MEDIA QUERY PORTFOLIO SECTION*****/
+@media only screen and (max-width: 600px) {
+    .portfolio {
+        height: 200vh;
+    }
+
+    .portfolio__heading--h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .portfolio__img img {
+        width: 70%;
+        height: 280px;
+        margin: 0 auto 5%;
+
+    }
+
+    .portfolio__img:last-child {
+        margin-bottom: 10%;
+    }
+
+    .portfolio__btn {
+        padding: 5% 15%;
+
+    }
+
+
+}
+
+/***********MEDIA QUERY CONTACT SECTION*****/
+@media only screen and (max-width: 600px) {
+
+    .contact {
+        height: 180vh;
+    }
+
+    .contact__row {
+        flex-direction: column;
+    }
+
+    .contact__heading--h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+
+    .contact__btn.contact__btn--2 {
+        margin: 10% 0;
+    }
+
+
+}
+
+
+/***********MEDIA QUERY FOOTER SECTION*****/
+
+@media only screen and (max-width: 600px) {
+    footer p {
+
+        padding: 5% 0 0;
+
+    }
+}
