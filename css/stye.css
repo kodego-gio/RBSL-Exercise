@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+
 /* -------------------------------------------------------------- Header Section--------------------------------------------------------------- */
 header { 
     padding-bottom: 140px;
@@ -26,7 +34,8 @@ header {
     display: flex;
     float: right;
     list-style: none;
-    margin: 20px;   
+    margin: 20px;
+
 }
 
 .header__mainMenu li {
@@ -45,6 +54,7 @@ header {
 
 .header__folio {
     color: yellowgreen;
+    text-decoration: none;
 }
 
 .header__text {
@@ -71,6 +81,12 @@ header {
     font-size: 30px;
     font-weight: 500;
 }
+
+.btn__toggleMenu {
+    /*display: none;*/
+}
+
+
 /* -------------------------------------------------------------- Header Section END--------------------------------------------------------------- */
 
 /* -------------------------------------------------------------- About Me Section Start --------------------------------------------------------------- */
@@ -263,10 +279,14 @@ form textarea:hover {
 
 /***********MEDIA QUERY HEADER SECTION*****/
 @media only screen and (max-width: 600px) {
-    .header {
+    header {
 
-        background-image: none;
+        /*background-image: none; */
         /* background-color: #242323; */
-        background-color: #3E3C3C;
+        /*background-image: url(../image/my-pic.bmp);*/
+        /*background-size: 600px;*/
+        /*background-repeat: no-repeat;*/
     }
+  
+
 }
