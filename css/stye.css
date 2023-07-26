@@ -25,13 +25,13 @@ header {
 .header__portfolio {
     font-size: 60px;
     font: 200px;
+
 }
 
 
 
 .header__mainMenu {
     display: flex;
-    float: right;
     list-style: none;
     margin: 20px;
 
