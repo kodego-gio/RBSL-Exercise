@@ -7,10 +7,11 @@
 /* -------------------------------------------------------------- Header Section--------------------------------------------------------------- */
 .header__section {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
 }
 
 header { 
+    display: grid;
     padding-bottom: 140px;
     background-position: center;
     background-size: 80%;
