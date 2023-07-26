@@ -4,15 +4,14 @@
     box-sizing: border-box;
 }
 
-.grid-container {
+/* -------------------------------------------------------------- Header Section--------------------------------------------------------------- */
+.header__section {
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: #2196F3;
     padding: 10px;
 }
 
-
-/* -------------------------------------------------------------- Header Section--------------------------------------------------------------- */
 header { 
     padding-bottom: 140px;
     background-position: center;
@@ -80,10 +79,6 @@ header {
     justify-content: center;
     font-size: 30px;
     font-weight: 500;
-}
-
-.btn__toggleMenu {
-    /*display: none;*/
 }
 
 
