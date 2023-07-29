@@ -7,43 +7,107 @@
 /* -------------------------------------------------------------- Header Section--------------------------------------------------------------- */
 .header__section {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-}
-
-header { 
-    display: grid;
-    grid-template-areas: header header header header;
-    padding-bottom: 140px;
+    grid-template-areas: 'header_1 header_1 header_home header_about header_portfolio header_contact'
+                            'center_headerText center_headerText center_headerText center_headerText center_headerText center_headerText'
+                            'footer footer footer footer footer footer';
+    grid-template-columns: auto auto 100px 100px 100px 100px;
     background-position: center;
     background-size: 80%;
     background-position-y: 20%;
     background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(134, 102, 239)), url("../image/my-pic.bmp");
     background-size: cover;
+    gap: 10px;
     
 }
 
+/*.header__section {
+    display: grid;
+}
+*/
+
+.header__section > div {
+    text-align: center;
+}
+
 .header__portfolio {
+    grid-area: header_1;
+}
+
+.nav-item1 {
+    grid-area: header_home;
+    font-size: 20px;
+    padding-top: 10px;
+    
+}
+
+.nav-item2 {
+    grid-area: header_about;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.nav-item3 {
+    grid-area: header_portfolio;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.nav-item4 {
+    grid-area: header_contact;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.header__text {
+    grid-area: center_headerText;
+}
+
+.footer {
+    grid-area: footer;
+    grid-column: 1 / span 4;
+    text-align: center;
+}
+
+.nav-item1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-item2 a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.nav-item3 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-item4 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a.header__portfolio {
+    text-decoration: none;
+}
+
+
+/*
+header { 
+    padding-bottom: 140px;
+    background-position: center;
+    background-size: 80%;
+    background-position-y: 20%;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(134, 102, 239)), url("../image/my-pic.bmp");
+    background-size: cover; 
+}
+*/
+
+.header__portfolio{
     font-size: 60px;
     font: 200px;
-
-}
-
-
-
-.header__mainMenu {
-    display: flex;
-    list-style: none;
-    margin: 20px;
-
-}
-
-.header__mainMenu li {
-    margin-right: 40px; 
-}
-
-.header__mainMenu li a {
-    text-decoration: none;
-    color: aliceblue;
 }
 
 .header__portfolio {
@@ -85,10 +149,28 @@ header {
 /* -------------------------------------------------------------- Header Section END--------------------------------------------------------------- */
 
 /* -------------------------------------------------------------- About Me Section Start --------------------------------------------------------------- */
+.about__section {
+    display: grid;
+    grid-template-areas: 'header_1 header_1 header_home header_about header_portfolio header_contact'
+    'about__section about__section about__section about__section about__section about__section'
+    'footer footer footer footer footer footer';
+    
+    grid-template-columns: auto auto 100px 100px 100px 100px;
+    background-position: center;
+    background-size: 80%;
+    background-position-y: 20%;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(134, 102, 239)), url("../image/my-pic.bmp");
+    background-size: cover;
+    gap: 10px;
+
+}
+
+.about__section {
+    grid-area: about__section;
+}
 
 .aboutMe__text {
-    background-color: rgb(14, 10, 43);
-    padding: 40px 50px 40px 50px;
+    padding-top: 150px;
 }
 
 .aboutMe__text h2 {
@@ -111,7 +193,12 @@ header {
 /* -------------------------------------------------------------- My Portfolio End --------------------------------------------------------------- */
 
 /* -------------------------------------------------------------- Contact Me Start --------------------------------------------------------------- */
+
+
 .contact {
+    display: grid;
+    grid-template-areas: 'contact-row-left contact-row-left contact__row-right contact__row-right';
+    gap: 10px;
     height: 100vh;
     color: fffff;
     background-color: aqua;
@@ -119,6 +206,16 @@ header {
     font-size: 18px;
     padding: 15px;
     
+}
+
+.contact__row-left {
+    grid-area: contact-row-left;
+    flex-basis: 40%;
+}
+
+.contact__row-right {
+    grid-area: contact__row-right;
+    flex-basis: 60%;
 }
 
 .contact__row {
@@ -153,8 +250,6 @@ form input:hover, form textarea:hover {
     cursor: pointer;
 }
 
-
-/* -------------------------------------------------------------- Contact Me End --------------------------------------------------------------- */
 .contact {
     height: 100vh;
     color: #fff;
@@ -164,10 +259,6 @@ form input:hover, form textarea:hover {
 
 .contact__row {
     display: flex;
-}
-
-.contact__row-left {
-    flex-basis: 40%;
 }
 
 .contact__heading--h2 {
@@ -216,10 +307,6 @@ form input:hover, form textarea:hover {
     display: inline-block;
 }
 
-.contact__row-right {
-    flex-basis: 60%;
-}
-
 .contact__row-right form {
     width: 100%;
 }
@@ -254,13 +341,28 @@ form textarea:hover {
     color: #000;
 }
 
-/* ----------------------------------------------- Footer Start -------------------------------------------------------- */
-.footer {
-    background-color: rgb(15, 20, 65);
-   
+/* -------------------------------------------------------------- Contact Me End --------------------------------------------------------------- */
+
+/* --------------------------------------------------------------- Footer Start -------------------------------------------------------- */
+/*.footer-section {
+    display: grid;
+    grid-template-areas: 'footer footer footer footer footer footer';
+    
 }
 
-.footer p {
+.footer {
+    grid-area: footer;
+}
+*/
+
+
+.footer-section {
+    background-color: rgb(15, 20, 65);
+    grid-column: 1 / span 6;
+    grid-row: 3;
+}
+
+.footer-section p {
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -268,20 +370,5 @@ form textarea:hover {
     padding: 40px;
 }
 
+
 /* ----------------------------------------------- Footer End -------------------------------------------------------- */
-
-/* ----------------------------------------------- Media Queries -------------------------------------------------------- */
-
-/***********MEDIA QUERY HEADER SECTION*****/
-@media only screen and (max-width: 600px) {
-    header {
-
-        /*background-image: none; */
-        /* background-color: #242323; */
-        /*background-image: url(../image/my-pic.bmp);*/
-        /*background-size: 600px;*/
-        /*background-repeat: no-repeat;*/
-    }
-  
-
-}
